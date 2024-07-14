@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cursos Online</h1>
+    <head>
+        <nav>
+            <ul>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="informacion">Informacion</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </head>
+    <main>
+        <section id="cursos">
+            <h2>Nuestros Cursos</h2>
+            <div class="curso">
+                <h3>Curso de programacion en Python</h3>
+                <p>Aprende a programar en Python desde cero</p>
+                <button onclick="comprarCurso('Curso de programacion')">Comprar</button>
+            </div>
+            <div class="curso">
+                <h3>Curso de diseño web</h3>
+                <p>Aprende a diseñar paginas web y dominar las herramientas necesarias para páginas web atractivas</p>
+                <button onclick="comprarCurso('Curso de diseño web')">Comprar</button>
+            </div>
+        </section>
+        <section id="informacion">
+            <h2>Informacion</h2>
+            <p>Somos una plataforma dedicada a ofrecer los mejores cursos online en diversas áreas de conocimiento.</p>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
